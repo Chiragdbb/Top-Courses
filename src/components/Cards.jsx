@@ -3,7 +3,6 @@ import { useState } from "react";
 
 function Cards({ courses, category }) {
 	const [likedCourses, setLikedCourses] = useState([]);
-
 	const getCourses = () => {
 		if (category === "All") {
 			let allCourses = [];
@@ -14,7 +13,6 @@ function Cards({ courses, category }) {
 			);
 			return allCourses;
 		} else {
-            console.log(courses[category])
 			return courses[category];
 		}
 	};
